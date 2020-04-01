@@ -2,6 +2,7 @@ class OrdersController < ApplicationController
 
   def show
     @order = Order.find(params[:id])
+    @item_line =LineItem.where(order_id: @order.id)
   end
 
   def create
@@ -41,6 +42,7 @@ class OrdersController < ApplicationController
       total_cents: cart_subtotal_cents,
       stripe_charge_id: stripe_charge.id, # returned by stripe
     )
+
 
     enhanced_cart.each do |entry|
       product = entry[:product]

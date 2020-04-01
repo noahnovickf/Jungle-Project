@@ -6,7 +6,7 @@
 <% if enhanced_cart.empty?%>
   <div class="alert"> Your cart is empty, please return to the homepage.</div>
   <br>
-  <a href="/">Home</a>
+  <%= link_to "Continue Shopping", root_path, class: 'btn btn-lg btn-primary' %>
 <% else %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
