@@ -33,18 +33,18 @@ RSpec.describe User, type: :model do
     it 'login valid user' do 
       user = User.create(name: 'hi', email: 'n@n.com', password: "1345", password_confirmation: '1345')
       userA = User.authenticate_with_credentials(user.email, user.password)
-      expect(userA).to be true
+      expect(userA.id).to be user.id
     end
     
     it 'login valid user with spaces in email' do 
       user = User.create(name: 'hi', email: 'n@n.com', password: "1345", password_confirmation: '1345')
       userA = User.authenticate_with_credentials(' n@n.com ', user.password)
-      expect(userA).to be true
+      expect(userA.id).to be user.id
     end
     it 'login valid user with bad casing in email' do 
       user = User.create(name: 'hi', email: 'n@n.com', password: "1345", password_confirmation: '1345')
       userA = User.authenticate_with_credentials('N@n.com', user.password)
-      expect(userA).to be true
+      expect(userA.id).to be user.id
     end
 
   end
