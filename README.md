@@ -27,6 +27,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-![Alt text]()
-![Alt text]()
-![Alt text]()
+![Homepage](https://github.com/noahnovickf/Jungle-Project/blob/master/public/Screen%20Shot%202020-04-08%20at%206.22.32%20PM.png)
+![Cart](https://github.com/noahnovickf/Jungle-Project/blob/master/public/Screen%20Shot%202020-04-08%20at%206.23.00%20PM.png)
+![Order Confirmation](https://github.com/noahnovickf/Jungle-Project/blob/master/public/Screen%20Shot%202020-04-08%20at%206.23.24%20PM.png)
